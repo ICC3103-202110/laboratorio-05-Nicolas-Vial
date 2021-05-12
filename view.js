@@ -2,6 +2,8 @@ const figlet = require('figlet')
 const chalk = require('chalk')
 const inquirer = require('inquirer')
 
+
+
 function getTitle(){
     return chalk.green(
         figlet.textSync(
@@ -33,9 +35,20 @@ function input(msg){
     ])
 }
 
+function table(amount, percentage, finalTip, finalBill){
+    const table=[{
+        'Bill Amount':  '$'+amount.toString(), 
+        'Tip (%)': percentage.toString()+'%', 
+        'Tip': '$'+finalTip.toString(), 
+        'Total': '$'+finalBill.toString()
+    }]
+    return table
+}
+
 
 module.exports = {
     getTitle,
-    input
+    input,
+    table
 }
 

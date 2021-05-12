@@ -6,8 +6,6 @@ function tipCalculator(number1, number2){
 
 function finalPayCalculator(number1, number2){
     finalValuePay=parseInt(number1)+parseInt(number2)
-    console.log(number1)
-    console.log(number2)
     return finalValuePay
 }
 
