@@ -5,7 +5,7 @@ const inquirer = require('inquirer')
 
 
 function getTitle(){
-    return chalk.green(
+    return chalk.yellow(
         figlet.textSync(
             'Tip Calculator App',
             {
